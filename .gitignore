@@ -1,0 +1,17 @@
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+*.sqlite*
+*.db
+*.log
+__pycache__/
+.venv/
+.ipynb_checkpoints/
+dist/
+build/
+*.egg-info/
