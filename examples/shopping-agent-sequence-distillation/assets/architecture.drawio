@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="Electron" compressed="false">
+  <diagram id="seqkd-shopping-agent" name="Sequence distillation">
+    <mxGraphModel grid="1" gridSize="8" page="1" pageScale="1" pageWidth="912" pageHeight="478" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="canvas" value="" style="shape=rectangle;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="912" height="478" as="geometry" />
+        </mxCell>
+        <mxCell id="title" value="Sequence distillation and tool-use evaluation" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=27;fontColor=#172C48;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="24" y="17" width="840" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="How verified teacher trajectories train a 4-bit Qwen3.5-4B student to solve multi-step catalog tasks" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=15;fontColor=#425873;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="24" y="55" width="840" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="backend" value="" style="rounded=1;absoluteArcSize=1;arcSize=12;fillColor=#F3F6FA;strokeColor=#172C48;strokeWidth=1.3;dashed=0;dashPattern=4 4;" vertex="1" parent="1">
+          <mxGeometry x="174" y="94" width="560" height="364" as="geometry" />
+        </mxCell>
+        <mxCell id="boundary-label" value="Distillation and benchmark harness" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=15;fontColor=#172C48;fontStyle=1;" vertex="1" parent="backend">
+          <mxGeometry x="15" y="8" width="450" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="build-lane" value="" style="rounded=1;absoluteArcSize=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#AABDD2;strokeWidth=1.3;dashed=1;dashPattern=4 4;" vertex="1" parent="backend">
+          <mxGeometry x="13" y="42" width="534" height="147" as="geometry" />
+        </mxCell>
+        <mxCell id="search-lane" value="" style="rounded=1;absoluteArcSize=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#AABDD2;strokeWidth=1.3;dashed=1;dashPattern=4 4;" vertex="1" parent="backend">
+          <mxGeometry x="13" y="208" width="534" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="build-badge" value="1" style="ellipse;fillColor=#315D9C;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Arial;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="backend">
+          <mxGeometry x="26" y="48" width="22" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="build-label" value="Filter &amp; distill teacher trajectories" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=14;fontColor=#315D9C;fontStyle=1;" vertex="1" parent="backend">
+          <mxGeometry x="55" y="48" width="320" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="search-badge" value="2" style="ellipse;fillColor=#187060;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Arial;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="backend">
+          <mxGeometry x="26" y="214" width="22" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="search-label" value="Evaluate multi-step tool loop" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=14;fontColor=#187060;fontStyle=1;" vertex="1" parent="backend">
+          <mxGeometry x="55" y="214" width="320" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="traces" value="" style="shape=image;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHJ4PSI3IiBmaWxsPSIjMzY3RUFDIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNiA2KSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEuOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWxsPSJub25lIj48cmVjdCB4PSI1IiB5PSI3IiB3aWR0aD0iMjYiIGhlaWdodD0iMjIiIHJ4PSIyIi8+PHBhdGggZD0iTTUgMTNoMjZNMTAgMTBoLjAxTTE0IDEwaC4wMU0xMCAxOGgxNm0tMTYgNWgxMSIvPjwvZz48L3N2Zz4=;" vertex="1" parent="1">
+          <mxGeometry x="65" y="170" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="traces-title" value="Teacher rollouts" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=14;fontColor=#172C48;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="4" y="224" width="170" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="traces-detail" value="12 product trajectories" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=12;fontColor=#425873;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="4" y="245" width="170" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="scorer" value="" style="shape=image;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHJ4PSI3IiBmaWxsPSIjMzE2REFEIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNiA2KSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEuOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWxsPSJub25lIj48Y2lyY2xlIGN4PSIxNiIgY3k9IjE1IiByPSI4Ii8+PHBhdGggZD0ibTIyIDIxIDggOE0xMiAxNWg4bS00LTR2OCIvPjwvZz48L3N2Zz4=;" vertex="1" parent="backend">
+          <mxGeometry x="75" y="76" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="scorer-title" value="Native scorer" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=14;fontColor=#172C48;fontStyle=1;" vertex="1" parent="backend">
+          <mxGeometry x="14" y="130" width="170" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="scorer-detail" value="Keep 8 solved traces" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=12;fontColor=#425873;fontStyle=0;" vertex="1" parent="backend">
+          <mxGeometry x="14" y="151" width="170" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="encode" value="" style="shape=image;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHJ4PSI3IiBmaWxsPSIjNkE1M0E2Ii8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNiA2KSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEuOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWxsPSJub25lIj48Y2lyY2xlIGN4PSI3IiBjeT0iMjQiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjEwIiByPSIzIi8+PGNpcmNsZSBjeD0iMjkiIGN5PSIyMiIgcj0iMyIvPjxwYXRoIGQ9Im05IDIyIDctOW00IDAgNyA3TTEwIDI0bDE2LTIiLz48L2c+PC9zdmc+;" vertex="1" parent="backend">
+          <mxGeometry x="253" y="76" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="encode-title" value="Assistant-only SFT" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=14;fontColor=#172C48;fontStyle=1;" vertex="1" parent="backend">
+          <mxGeometry x="192" y="130" width="170" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="encode-detail" value="Prompt masked · ≤ 2,048 tok" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=12;fontColor=#425873;fontStyle=0;" vertex="1" parent="backend">
+          <mxGeometry x="192" y="151" width="170" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="qlora" value="" style="shape=image;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHJ4PSI3IiBmaWxsPSIjMzk3NDRFIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNiA2KSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEuOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWxsPSJub25lIj48ZWxsaXBzZSBjeD0iMTgiIGN5PSI5IiByeD0iMTEiIHJ5PSI0Ii8+PHBhdGggZD0iTTcgOXYxN2MwIDUgMjIgNSAyMiAwVjlNNyAxN2MwIDUgMjIgNSAyMiAwIi8+PC9nPjwvc3ZnPg==;" vertex="1" parent="backend">
+          <mxGeometry x="429" y="76" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="qlora-title" value="4-bit QLoRA" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=14;fontColor=#172C48;fontStyle=1;" vertex="1" parent="backend">
+          <mxGeometry x="368" y="130" width="170" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="qlora-detail" value="Qwen3.5-4B · 9.3 GiB" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=12;fontColor=#425873;fontStyle=0;" vertex="1" parent="backend">
+          <mxGeometry x="368" y="151" width="170" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="request" value="" style="shape=image;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHJ4PSI3IiBmaWxsPSIjMzY3RUFDIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNiA2KSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEuOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWxsPSJub25lIj48cGF0aCBkPSJNNiA3aDI0djE3SDE2bC03IDZ2LTZINnpNMTQgMTNhNCA0IDAgMSAxIDYgNGMtMS41IDEtMiAyLTIgM20wIDEuNXYuMSIvPjwvZz48L3N2Zz4=;" vertex="1" parent="1">
+          <mxGeometry x="65" y="329" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="request-title" value="Held-out task" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=14;fontColor=#172C48;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="4" y="383" width="170" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="request-detail" value="Product query · no web" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=12;fontColor=#425873;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="4" y="404" width="170" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="react" value="" style="shape=image;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHJ4PSI3IiBmaWxsPSIjNkE1M0E2Ii8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNiA2KSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEuOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWxsPSJub25lIj48Y2lyY2xlIGN4PSI3IiBjeT0iMjQiIHI9IjMiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjEwIiByPSIzIi8+PGNpcmNsZSBjeD0iMjkiIGN5PSIyMiIgcj0iMyIvPjxwYXRoIGQ9Im05IDIyIDctOW00IDAgNyA3TTEwIDI0bDE2LTIiLz48L2c+PC9zdmc+;" vertex="1" parent="backend">
+          <mxGeometry x="75" y="235" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="react-title" value="ReAct tool loop" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=14;fontColor=#172C48;fontStyle=1;" vertex="1" parent="backend">
+          <mxGeometry x="14" y="289" width="170" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="react-detail" value="8 steps · catalog tools" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=12;fontColor=#425873;fontStyle=0;" vertex="1" parent="backend">
+          <mxGeometry x="14" y="310" width="170" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="loopback" value="" style="shape=image;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHJ4PSI3IiBmaWxsPSIjMjQ3NjZDIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNiA2KSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEuOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWxsPSJub25lIj48cGF0aCBkPSJNNSA4aDI2bC05IDExdjlsLTgtM3YtNnpNMTIgMTJoMTIiLz48L2c+PC9zdmc+;" vertex="1" parent="backend">
+          <mxGeometry x="253" y="235" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="loopback-title" value="Loopback inference" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=14;fontColor=#172C48;fontStyle=1;" vertex="1" parent="backend">
+          <mxGeometry x="192" y="289" width="170" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="loopback-detail" value="Base vs. Student adapter" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=12;fontColor=#425873;fontStyle=0;" vertex="1" parent="backend">
+          <mxGeometry x="192" y="310" width="170" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="result" value="" style="shape=image;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHJ4PSI3IiBmaWxsPSIjMjQ3NjZDIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNiA2KSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEuOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWxsPSJub25lIj48cGF0aCBkPSJNOCA1aDEzbDcgN3YxOUg4ek0yMSA1djhoN00xMyAxN2gxMG0tMTAgNWgxMG0tMTAgNWg2Ii8+PC9nPjwvc3ZnPg==;" vertex="1" parent="1">
+          <mxGeometry x="803" y="329" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="result-title" value="Scored evaluation" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=14;fontColor=#172C48;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="742" y="383" width="170" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="result-detail" value="Base 0.0 · Student 1.0" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=12;fontColor=#425873;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="742" y="404" width="170" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="traces-to-scorer" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;strokeWidth=1.6;strokeColor=#315D9C;endArrow=block;endSize=7;endFill=1;exitX=1;exitY=0.5;exitPerimeter=0;entryX=0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="traces" target="scorer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="scorer-to-encode" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;strokeWidth=1.6;strokeColor=#315D9C;endArrow=block;endSize=7;endFill=1;exitX=1;exitY=0.5;exitPerimeter=0;entryX=0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="scorer" target="encode">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="encode-to-qlora" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;strokeWidth=1.6;strokeColor=#315D9C;endArrow=block;endSize=7;endFill=1;exitX=1;exitY=0.5;exitPerimeter=0;entryX=0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="encode" target="qlora">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="request-to-react" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;strokeWidth=1.6;strokeColor=#187060;endArrow=block;endSize=7;endFill=1;exitX=1;exitY=0.5;exitPerimeter=0;entryX=0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="request" target="react">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="react-to-loopback" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;strokeWidth=1.6;strokeColor=#187060;endArrow=block;endSize=7;endFill=1;exitX=1;exitY=0.5;exitPerimeter=0;entryX=0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="react" target="loopback">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qlora-to-loopback" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;strokeWidth=1.6;strokeColor=#187060;endArrow=block;endSize=7;endFill=1;exitX=1;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=0;entryPerimeter=0;" edge="1" parent="1" source="qlora" target="loopback">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="699" y="194" />
+              <mxPoint x="699" y="297" />
+              <mxPoint x="451" y="297" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="loopback-to-result" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;strokeWidth=1.6;strokeColor=#187060;endArrow=block;endSize=7;endFill=1;exitX=1;exitY=0.5;exitPerimeter=0;entryX=0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="loopback" target="result">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-input" value="12 traces" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=11;fontColor=#315D9C;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="114" y="174" width="59" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-extract" value="8 solved trajectories" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=11;fontColor=#315D9C;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="294" y="173" width="135" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-write" value="4 distinct updates" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=11;fontColor=#315D9C;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="476" y="173" width="124" height="17" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-read" value="Load LoRA adapter" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=11;fontColor=#187060;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="527" y="284" width="150" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-output" value="Rollout + native score" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=11;fontColor=#187060;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="513" y="330" width="173" height="17" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
