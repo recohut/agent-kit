@@ -2,6 +2,7 @@
 
 Runnable companion example for the Recohut blog article on sequence-level
 knowledge distillation and multi-step tool-use evaluation with `Qwen/Qwen3.5-4B`.
+Read the complete article in [`article.md`](article.md) or on the [Recohut Blog](https://recohut.com/blog/shopping-agent-sequence-distillation).
 
 ## Overview
 
