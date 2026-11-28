@@ -1,0 +1,97 @@
+{
+  "customers": [
+    {
+      "id": "cust-maria",
+      "tenant": "demo-motor",
+      "name": "Maria Costa"
+    }
+  ],
+  "policies": [
+    {
+      "id": "POL-2001",
+      "tenant": "demo-motor",
+      "customer_id": "cust-maria",
+      "product": "Motor comprehensive",
+      "status": "active",
+      "excess_gbp": 250,
+      "cover_summary": "Third party, fire, theft and accidental damage for a 2019 Ford Focus used in the UK."
+    }
+  ],
+  "claims": [
+    {
+      "id": "CLM-1001",
+      "tenant": "demo-motor",
+      "customer_id": "cust-maria",
+      "policy_id": "POL-2001",
+      "status": "under_review",
+      "opened_on": "2026-10-02",
+      "summary": "Windscreen chip on the driver's side."
+    },
+    {
+      "id": "CLM-1002",
+      "tenant": "demo-motor",
+      "customer_id": "cust-maria",
+      "policy_id": "POL-2001",
+      "status": "closed_paid",
+      "opened_on": "2026-06-14",
+      "summary": "Parking scrape on the rear bumper."
+    }
+  ],
+  "bills": [
+    {
+      "id": "BILL-3001",
+      "tenant": "demo-motor",
+      "customer_id": "cust-maria",
+      "policy_id": "POL-2001",
+      "amount_gbp": "186.40",
+      "due_on": "2026-11-20",
+      "status": "unpaid"
+    }
+  ],
+  "knowledge_passages": [
+    {
+      "id": "K-EXCESS-1",
+      "version": "2026.1",
+      "source": "synthetic-motor-wording",
+      "heading": "Motor policy excess",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "applicability": "demo-motor comprehensive policies",
+      "tenant": "demo-motor",
+      "body": "The standard accidental damage excess is the amount shown on the schedule. Glass claims may use a lower glass excess. The customer chooses whether to proceed after the excess is explained. This passage is synthetic."
+    },
+    {
+      "id": "K-CLAIM-STATUS-1",
+      "version": "2026.1",
+      "source": "synthetic-claims-guide",
+      "heading": "What under review means",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "applicability": "demo-motor claims",
+      "tenant": "demo-motor",
+      "body": "A claim marked under review is open. An assessor has the file and has not yet issued a decision. Status text is guidance. It does not authorise a payment or a repair. This passage is synthetic."
+    },
+    {
+      "id": "K-BILLING-1",
+      "version": "2026.1",
+      "source": "synthetic-billing-guide",
+      "heading": "Premium instalments",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "applicability": "demo-motor billing",
+      "tenant": "demo-motor",
+      "body": "An unpaid instalment remains due until the customer pays it through the usual channels. This desk can show the amount and due date. It cannot take a payment. This passage is synthetic."
+    },
+    {
+      "id": "K-FLEET-EXCESS-1",
+      "version": "2026.1",
+      "source": "synthetic-fleet-wording",
+      "heading": "Fleet excess",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "applicability": "other-fleet policies",
+      "tenant": "other-fleet",
+      "body": "Fleet accidental damage excess is 5000 GBP. This other-tenant passage must never be returned for demo-motor searches. This passage is synthetic."
+    }
+  ]
+}
